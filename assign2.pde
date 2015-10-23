@@ -1,4 +1,6 @@
-PImage fighter, background, backgroundTwo, hpImg, treasure, enemy;
+/*  please implement your assign1 code in this file. */
+
+PImage fighter, backgroundOne, backgroundTwo, hpImg, treasure, enemy;
 PImage startOne, startTwo, endOne, endTwo; 
 int treasureX, treasureY, enemyX, enemyY, x, fighterX, fighterY, gamestate, speed=5;
 float hp;
@@ -21,7 +23,7 @@ void setup () {
   enemyX=10;
   enemyY=floor(random(50,400));  //enemy random
   
-  background=loadImage("img/bg1.png");
+  backgroundOne=loadImage("img/bg1.png");
   backgroundTwo=loadImage("img/bg2.png");
   startOne = loadImage("img/start2.png");
   startTwo = loadImage("img/start1.png");
@@ -53,7 +55,7 @@ void draw() {
     
       //background moving
       image(backgroundTwo,x,0);
-      image(background,x-640,0);
+      image(backgroundOne,x-640,0);
       image(backgroundTwo,x-1280,0);
       x++;
       x=x%1280;  
