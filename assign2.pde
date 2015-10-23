@@ -1,4 +1,3 @@
-/*  please implement your assign1 code in this file. */
 
 PImage fighter, backgroundOne, backgroundTwo, hpImg, treasure, enemy;
 PImage startOne, startTwo, endOne, endTwo; 
